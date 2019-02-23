@@ -1,0 +1,9 @@
+apps:
+- name: gostart
+  instances: 1
+  exec_mode: fork
+  interpreter: "./gostart"
+  script: "./pm2.yml"
+  env:
+    GIN_MODE: release
+    NB_ENV: develop
